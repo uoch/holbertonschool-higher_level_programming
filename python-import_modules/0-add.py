@@ -11,11 +11,9 @@ def add(a, b):
         The return value. a + b
     """
     return a + b
-__import__('0-add')
+
 if __name__ == "__main__":
-
-	import importlib
-
+	__import__('0-add')
 	a = 1
 	b = 2
 	result = add(a, b)
