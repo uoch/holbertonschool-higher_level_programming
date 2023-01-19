@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from calculator_1 import add, div, mul, sub
+import calculator_1 
 import sys
 op = ["+", "-", "/", "*"]
 if __name__ == "__main__":
