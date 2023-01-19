@@ -1,2 +1,2 @@
-import sys
-sys.stdout.write("#pythoniscool\n")
+#!/usr/bin/python3
+__import__("sys").stdout.write("#pythoniscool\n")
