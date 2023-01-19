@@ -7,6 +7,7 @@ if __name__ == "__main__":
         print("0")
         sys.exit()
     for i in range(1, k):
-        if sys.argv[i].isnumeric() or (sys.argv[i][1:].isnumeric() and sys.argv[i][0] == '-'):
+        if sys.argv[i].isnumeric() or (sys.argv[i][1:].isnumeric()
+                                       and sys.argv[i][0] == '-'):
             r += int(sys.argv[i])
     print(r)
