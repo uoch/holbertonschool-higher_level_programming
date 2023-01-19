@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-from calculator_1 import add, div, mul, sub
-
 import sys
+from calculator_1 import add, sub, mul, div
 
 op = ["+", "-", "/", "*"]
 
