@@ -13,12 +13,12 @@ if __name__ == "__main__":
             operator_found = True
             break
     if not operator_found:
-        print("Only: +, -, * and / available")
+        print("Unknown operator. Only: +, -, * and / available")
         exit(1)
 
     a = int(sys.argv[1])
     b = int(sys.argv[3])
-    
+
     if sys.argv[2] == "+":
         r = add(a, b)
         print("{} + {} = {:d}".format(a, b, r))
