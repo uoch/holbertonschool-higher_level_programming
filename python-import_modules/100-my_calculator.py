@@ -12,12 +12,13 @@ if __name__ == "__main__":
         if sys.argv[2] == i:
             operator_found = True
             break
-        if not operator_found:
-            print("Unknown operator. Available operators: +, -, * and /\n")
-            exit(1)
+    if not operator_found:
+        print("Unknown operator. Available operators: +, -, * and /\n")
+        exit(1)
 
     a = int(sys.argv[1])
     b = int(sys.argv[3])
+    
     if sys.argv[2] == "+":
         r = add(a, b)
         print("{} + {} = {:d}".format(a, b, r))
