@@ -13,7 +13,7 @@ if __name__ == "__main__":
             operator_found = True
             break
     if not operator_found:
-        print("Unknown operator. Available operators: +, -, * and /\n")
+        print("Only: +, -, * and / available")
         exit(1)
 
     a = int(sys.argv[1])
