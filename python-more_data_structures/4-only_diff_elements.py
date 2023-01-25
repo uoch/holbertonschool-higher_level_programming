@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def only_diff_elements(set_1, set_2):
     k = []
     if (set_1 is None) or (set_2 is None):
@@ -7,3 +8,4 @@ def only_diff_elements(set_1, set_2):
             if not (i == j):
                 k.append(i)
     return (k)
+#result = list(set_1.common_elements(set_2))
