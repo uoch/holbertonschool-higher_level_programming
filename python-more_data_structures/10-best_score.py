@@ -7,8 +7,4 @@ def best_score(a_dictionary):
     for key in a_dictionary.keys():
         for k in a_dictionary.keys():
             if a_dictionary[key] < a_dictionary[k]:
-            	return k
-
-my_dict = None
-best_key = best_score(my_dict)
-print("Best: {}".format(best_key))
+                return k
