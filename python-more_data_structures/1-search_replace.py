@@ -7,3 +7,4 @@ def search_replace(my_list, search, replace):
         if n[i] == search:
             n[i] = replace
     return n
+#result = list(map(lambda x: replace if x == search else x, my_list))
