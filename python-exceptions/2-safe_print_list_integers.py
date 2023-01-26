@@ -9,7 +9,7 @@ def safe_print_list_integers(my_list=[], x=0):
                 i += 1
             k += 1
         except IndexError:
-            print ("Traceback (most recent call last):")
+            print("Traceback (most recent call last):")
         x -= 1
     print()
     return i
