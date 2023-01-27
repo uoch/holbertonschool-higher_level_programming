@@ -8,5 +8,5 @@ def safe_print_integer_err(value):
         return True
     except:
         sys.stderr.write(
-            "Exception: Unknown format code 'd' for object of type 'str'")
+            "Exception: unsupported format string passed to set.__format__")
         return False
