@@ -8,5 +8,5 @@ def safe_print_integer_err(value):
         return True
     except:
         sys.stderr.write(
-            " Exception: unsupported format string passed to set.__format__")
+            "Exception: unsupported format string passed to set.__format__ ")
         return False
