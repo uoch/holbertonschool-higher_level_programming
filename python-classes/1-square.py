@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-"""Module documentation.
-
-This module contains the square class with private attribute.
-"""
+"""This module contains the square class with private attribute."""
 
 
 class Square:
