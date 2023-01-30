@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Module documentation.
 
-This module contains the implementation of the EmptyClass class.
+This module contains the square class with privet attribute.
 """
 
 
