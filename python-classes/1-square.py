@@ -5,4 +5,4 @@
 class Square:
     """A class with first private attribute
     """
-    pass
+    __size
