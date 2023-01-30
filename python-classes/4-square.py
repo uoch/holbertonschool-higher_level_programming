@@ -5,6 +5,7 @@
 
 
 class Square:
+
     """A class with a private attribute `size` to represent 
     """
 
