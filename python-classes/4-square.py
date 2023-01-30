@@ -5,8 +5,8 @@
 
 
 class Square:
-
-    """A class with a private attribute `size` to represent 
+    """A class with first private attribute with try except to handal size value
+        as integer and positive then calculate the area of the square
     """
 
     def __init__(self, size=0):
