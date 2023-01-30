@@ -6,10 +6,10 @@
 
 class Square:
     """A class with a private attribute `size` to represent 
-        the size of the square, and
+    the size of the square, and
     methods to handle the size value as an integer and positive,
     here we impliment the propriety and setter for the attrubute setter 
-        and calculate the area of the square.
+    and calculate the area of the square.
     """
 
     def __init__(self, size=0):
