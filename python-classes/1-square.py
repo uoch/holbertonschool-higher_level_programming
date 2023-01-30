@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Module documentation.
 
-This module contains the square class with privet attribute.
+This module contains the square class with private attribute.
 """
 
 
