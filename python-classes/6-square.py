@@ -48,11 +48,12 @@ class Square:
         if self.__size == 0:
             print()
         else:
-            if self.__position[0] > 0:
-                print()
-                for i in range(self.__size):
+            for i in range(self.__size):
+                if self.__position[0] > 0:
                     print((self.__position[0]-1)*' ', self.__size*'#')
-            else:
-                print()
-                for i in range(self.__size):
+                else:
                     print(self.__size*'#')
+
+
+my_square = Square(3, (1, 1))
+my_square.my_print()
