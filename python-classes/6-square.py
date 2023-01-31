@@ -54,6 +54,3 @@ class Square:
                 else:
                     print(self.__size*'#')
 
-
-my_square = Square(3, (1, 1))
-my_square.my_print()
