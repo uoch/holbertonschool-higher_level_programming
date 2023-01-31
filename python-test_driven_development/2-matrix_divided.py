@@ -1,9 +1,16 @@
 #!/usr/bin/python3
-"""0-add_integer.py"""
+"""divid matrix this module define a function that
+take a matrix list of lists .this matrix should respect a lot of conditions
+like it should be with the same size ,all the element mast be
+intger or flot
+"""
 
 
 def matrix_divided(matrix, div):
-    """2-matrix_divided.py"""
+    """2-matrix_divided.py
+    the thing her is all the condition will be printed
+    in the stdout
+    """
     for r in matrix:
         for el in r:
             if not isinstance(el, (int, float)):
