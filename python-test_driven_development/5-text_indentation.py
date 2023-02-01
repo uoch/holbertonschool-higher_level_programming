@@ -6,11 +6,7 @@ def text_indentation(text):
     """5-text_indentation.py"""
     if not isinstance(text, str):
         raise TypeError("text must be a string")
-    for i in text:
+    for i in " ".join(text.split()):
         print(i, end="")
-        if i == '.':
-            print("\n", end="\n")
-        if i == '?':
-            print("\n", end="\n")
-        if i == ':':
+        if i in (':', '.', '?'):
             print("\n", end="\n")
