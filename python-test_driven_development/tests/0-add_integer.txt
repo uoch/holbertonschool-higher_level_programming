@@ -31,19 +31,3 @@
     b must be an integer
     >>> add_integer(100)
     198
-    >>> print(add_integer(1, NaN))
-    Traceback (most recent call last):
-      File "<stdin>", line 1, in <module>
-    NameError: name 'NaN' is not defined
-    >>> print(add_integer(1))
-    99
-    >>> print(add_integer( , 1))
-  File "<stdin>", line 1
-    print(add_integer( , 1))
-                       ^
-    SyntaxError: invalid syntax
-
-
-
-
-    
