@@ -10,11 +10,11 @@ def matrix_divided(matrix, div):
     """2-matrix_divided.py
     the thing her is all the condition will be printed
     in the stdout"""
+    e = "matrix must be a matrix (list of lists) of integers/floats"
     for r in matrix:
         for el in r:
             if not isinstance(el, (int, float)):
-                raise TypeError(
-                    "matrix must be a matrix (list of lists) of integers/floats")
+                raise TypeError(e)
     if not all(isinstance(row, list) for row in matrix):
         raise TypeError(
             "matrix must be a matrix (list of lists) of integers/floats")
