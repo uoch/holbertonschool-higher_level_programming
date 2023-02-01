@@ -37,3 +37,7 @@ size must be >= 0
 ...     print(e)
 ... 
 size must be an integer
+>>> print_square()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'print_square' is not defined
