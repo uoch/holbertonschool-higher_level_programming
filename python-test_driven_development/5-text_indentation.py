@@ -14,4 +14,3 @@ def text_indentation(text):
             print()
         if i == ':':
             print()
-    print()
