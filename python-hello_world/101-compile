@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Store the file name in a variable
+main=$PYFILE
+
+# Compile the file
+python3 -m py_compile "${main}"
+
+# Rename the output file to append a "c" at the end
+mv "${main}c" "${main}.pyc"
