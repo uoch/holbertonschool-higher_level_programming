@@ -43,3 +43,11 @@ size must be an integer
 ...     print(e)
 ... 
 name 'print_square' is not defined
+>>> print_square(6)
+######
+######
+######
+######
+######
+######
+
