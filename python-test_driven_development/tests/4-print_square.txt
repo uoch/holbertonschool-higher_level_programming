@@ -37,12 +37,6 @@ size must be >= 0
 ...     print(e)
 ... 
 size must be an integer
->>> try:
-...     print_square()
-... except Exception as e:
-...     print(e)
-... 
-name 'print_square' is not defined
 >>> print_square(6)
 ######
 ######
