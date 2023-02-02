@@ -39,7 +39,7 @@ class Rectangle:
         return self.my_print()
 
     def __repr__(self):
-        return "Rectangle({}, {})".format(self.width, self.height)
+        return f"<3-rectangle.Rectangle object "
 
     def area(self):
         return (self.__height*self.__width)
@@ -53,6 +53,7 @@ class Rectangle:
         r = ""
         if self.__height == 0 or self.__width == 0:
             return ""
-        for i in range(self.__height):
-            r += (self.__width*'#') + '\n'
+        for i in range(self.__height-1):
+            r += ((self.__width*'#') + '\n')
+        r += ((self.__width*'#'))
         return r
