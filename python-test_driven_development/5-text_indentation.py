@@ -10,6 +10,5 @@ def text_indentation(text):
         print(i, end="")
         if i in (':', '.', '?'):
             print("\n", end="\n")
-    print()
 
 text_indentation("Holberton. School? How are you:    John")
