@@ -11,7 +11,7 @@
 
 
 class Node:
-    """_summary_
+    """this is a node class
     """
 
     def __init__(self, data, next_node=None):
@@ -38,4 +38,6 @@ class Node:
 
 
 class SinglyLinkedList:
-    pass
+	"""this is singly linked list clas
+	"""
+	pass
