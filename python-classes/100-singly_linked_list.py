@@ -57,6 +57,6 @@ class SinglyLinkedList:
         r = ""
         node = self.__head
         while node:
-            r += str(node.data) + "\n"
+            r += str(node.data)
             node = node.next_node
         return r
