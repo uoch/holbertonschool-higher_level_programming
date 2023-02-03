@@ -18,26 +18,30 @@ class Node:
         self.data = data
         self.next_node = next_node
 
+    @property
     def data(self):
-        return __data
+        return self.__data
 
+    @data.setter
     def data(self, value):
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         self.__data = value
         return self.__data
 
+    @property
     def next_node(self):
-        return __next_node
+        return self.__next_node
 
+    @next_node.setter
     def next_node(self, value):
-        if not isinstance(value, int):
-            raise TypeError("size must be an integer")
+        if value is not None and not isinstance(value, Node):
+            raise TypeError("value must be a Node or None")
         self.__next_node = value
-        return __next_node
+        return self.__next_node
 
 
 class SinglyLinkedList:
-	"""this is singly linked list clas
-	"""
-	pass
+    """this is singly linked list clas
+    """
+    pass
