@@ -57,5 +57,6 @@ class Rectangle:
             r += ((self.__width*'#') + '\n')
         r += ((self.__width*'#'))
         return r
+
     def __del__(self):
         print("Bye rectangle...")
