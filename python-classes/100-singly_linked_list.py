@@ -42,10 +42,12 @@ class Node:
 
 
 class SinglyLinkedList:
-    def __init__(self):
+	"""0-square.py"""
+	def __init__(self):
     	self.__head = None
-    def print_list(self):
-    	if node.next_node == __head:
-    		while Node:
-        		print(Node.data)
-        		node = Node.next_node
+
+	def print_list(self):
+        if node.next_node == __head:
+            while Node:
+                print(Node.data)
+                node = Node.next_node
