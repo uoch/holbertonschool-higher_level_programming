@@ -32,8 +32,3 @@ def lazy_matrix_mul(m_a, m_b):
     if len(m_a[0]) != len(m_b):
         raise ValueError("m_a and m_b can't be multiplied")
     return numpy.dot(m_a, m_b)
-
-try:
-    print(lazy_matrix_mul([[1, 2], [3, 4]], [[3, 4]]))
-except Exception as e:
-    print(e)
