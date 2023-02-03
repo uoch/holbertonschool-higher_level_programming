@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""_summary_
+"""liklist task
 
     Raises:
         TypeError: _description_
@@ -8,8 +8,6 @@
     Returns:
         _type_: _description_
     """
-
-
 class Node:
     """this is a node class
     """
@@ -42,12 +40,13 @@ class Node:
 
 
 class SinglyLinkedList:
-	"""0-square.py"""
-	def __init__(self):
-    	self.__head = None
+    """0-square.py"""
 
-	def print_list(self):
-        if node.next_node == __head:
-            while Node:
-                print(Node.data)
-                node = Node.next_node
+    def __init__(self):
+    self.__head = None
+
+    def print_list(self):
+    if node.next_node == __head:
+        while Node:
+            print(Node.data)
+            node = Node.next_node
