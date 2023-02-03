@@ -1,12 +1,5 @@
 #!/usr/bin/python3
 """liklist task
-
-    Raises:
-        TypeError: _description_
-        TypeError: _description_
-
-    Returns:
-        _type_: _description_
     """
 
 
@@ -49,6 +42,6 @@ class SinglyLinkedList:
 
     def print_list(self):
         if node.next_node == __head:
-        	while Node:
+            while Node:
             	print(Node.data)
             	node = Node.next_node
