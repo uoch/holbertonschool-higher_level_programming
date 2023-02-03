@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 def matrix_mul(m_a, m_b):
-    if not isinstance(m_a, list(list())):
+    if not isinstance(m_a, list):
         raise TypeError("m_a must be a list")
-    if not isinstance(m_b, list(list())):
+    if not isinstance(m_b, list):
         raise TypeError("m_b must be a list")
     if m_a in ([],[[]]):
         raise ValueError("a_m can't be empty")
@@ -20,6 +20,10 @@ def matrix_mul(m_a, m_b):
             raise TypeError("each row of m_a must be of the same size")
     if len(m_a[0]) != len(m_b):
         raise ValueError("m_a and m_b can't be multiplied")
-    for i in range(a_m):
-        for j in range(i): 
-            dot1 = m_a[i][j]*m_b[i][i]
+
+print(matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]]))
+print(matrix_mul([[1, 2]], [[3, 4], [5, 6]]))
+try:
+    print(matrix_mul([[1, '2']], [[3, 4], [5, 6]]))
+except Exception as e:
+    print(e)

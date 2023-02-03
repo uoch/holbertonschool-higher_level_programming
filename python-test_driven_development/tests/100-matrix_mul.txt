@@ -1,0 +1,19 @@
+>>> matrix_mul = __import__('100-matrix_mul').matrix_mul
+>>> print(matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]]))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/uoch/holbertonschool-higher_level_programming/python-test_driven_development/100-matrix_mul.py", line 3, in matrix_mul
+    if not isinstance(m_a, list):
+TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union
+>>> print(matrix_mul([[1, 2]], [[3, 4], [5, 6]]))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/uoch/holbertonschool-higher_level_programming/python-test_driven_development/100-matrix_mul.py", line 3, in matrix_mul
+    if not isinstance(m_a, list):
+TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union
+>>> try:
+...     print(matrix_mul([[1, '2']], [[3, 4], [5, 6]]))
+... except Exception as e:
+...     print(e)
+... 
+isinstance() arg 2 must be a type, a tuple of types, or a union
