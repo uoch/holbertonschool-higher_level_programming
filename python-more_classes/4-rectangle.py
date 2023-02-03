@@ -39,7 +39,7 @@ class Rectangle:
         return self.my_print()
 
     def __repr__(self):
-        return f"<3-rectangle.Rectangle object "
+        return f"Rectangle({self.height}, {self.width})"
 
     def area(self):
         return (self.__height*self.__width)
