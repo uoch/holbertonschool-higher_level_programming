@@ -48,7 +48,7 @@ class SinglyLinkedList:
             p = c
             c = c.next_node
         if p:
-            p = new
+            p.next_node = new
         else:
             self.__head = new
         new.next_node = c
@@ -57,6 +57,6 @@ class SinglyLinkedList:
         r = ""
         node = self.__head
         while node:
-            r += str(node.data)
+            r += str(node.data) + "\n"
             node = node.next_node
-        return r
+        return r[:-1]
