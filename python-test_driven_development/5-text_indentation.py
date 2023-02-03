@@ -3,6 +3,14 @@
 
 
 def text_indentation(text):
+    """text_indentation
+
+    Args:
+            text (string): input from user
+
+    Raises:
+            TypeError: text must be a string
+    """
     if not isinstance(text, str):
         raise TypeError("text must be a string")
     i = 0
@@ -11,8 +19,8 @@ def text_indentation(text):
             print(text[i])
             print()
             i += 1
-            while i < len(text) and text[i] == " ":
-                i += 1
+        while i < len(text) and text[i] == " ":
+            i += 1
         else:
             print(text[i], end="")
-            i += 1
+        i += 1

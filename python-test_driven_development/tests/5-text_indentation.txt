@@ -1,7 +1,22 @@
 >>> text_indentation = __import__('5-text_indentation').text_indentation
+>>> text_indentation("Holberton 
+  File "<stdin>", line 1
+    text_indentation("Holberton 
+                     ^
+SyntaxError: unterminated string literal (detected at line 1)
 >>> text_indentation("Holberton School")
-Holberton School
->>> text_indentation("Holberton ")
-Holberton
+HolbertonSchool>>> text_indentation("Holberton ")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/uoch/holbertonschool-higher_level_programming/python-test_driven_development/5-text_indentation.py", line 25, in text_indentation
+    print(text[i], end="")
+IndexError: string index out of range
+Holberton>>> text_indentation("Holberton ")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/uoch/holbertonschool-higher_level_programming/python-test_driven_development/5-text_indentation.py", line 25, in text_indentation
+    print(text[i], end="")
+IndexError: string index out of range
+
 
 
