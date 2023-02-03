@@ -42,6 +42,10 @@ class Node:
 
 
 class SinglyLinkedList:
-    """this is singly linked list clas
-    """
-    pass
+    def __init__(self):
+    	self.__head = None
+    def print_list(self):
+    	if node.next_node == __head:
+    		while Node:
+        		print(Node.data)
+        		node = Node.next_node
