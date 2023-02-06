@@ -8,7 +8,7 @@ def lookup(obj):
 
     Args:
         obj (any object): dir built-in function to retrieve a list
-        of the attributes of the object. 
+        of the attributes of the object.
 
     Returns:
         _type_: list
