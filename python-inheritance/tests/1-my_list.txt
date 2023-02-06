@@ -34,4 +34,4 @@
 >>> my_list.print_sorted()
 []
 >>> print(my_list)
-
+[]
