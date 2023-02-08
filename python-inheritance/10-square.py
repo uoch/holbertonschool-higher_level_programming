@@ -1,6 +1,10 @@
 #!/usr/bin/python3
-"""this task is for implimenting squar 
-from Rectangle"""
+
+"""t
+his task is for implimenting squar 
+from Rectangle
+"""
+
 Rectangle = __import__('9-rectangle').Rectangle
 
 
