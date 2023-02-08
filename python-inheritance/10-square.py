@@ -1,51 +1,20 @@
 #!/usr/bin/python3
 
-"""t
-his task is for implimenting squar 
-from Rectangle
+#!/usr/bin/python3
+
+"""
+a class Square that inherits from Rectangle (9-rectangle.py):
 """
 
-class BaseGeometry:
-    """area() is not implemented
-    """
-
-    def area(self):
-        raise Exception("area() is not implemented")
-
-    def integer_validator(self, name, value):
-
-        if type(value) is not int:
-            raise TypeError("{} must be an integer".format(name))
-        if value <= 0:
-            raise ValueError("{} must be greater than 0".format(name))
-
-class Rectangle (BaseGeometry):
-    """_summary_
-
-    Args:
-        BaseGeometry (is a class): that created in module 7-base_geometry
-        with the function integer_validator
-    """
-
-    def __init__(self, width, height):
-        self.integer_validator("width", width)
-        self.integer_validator("height", height)
-        self.__width = width
-        self.__height = height
-
-    def area(self):
-        return self.__width * self.__height
-
-    def __str__(self):
-        return "[Rectangle] {}/{}".format(self.__width, self.__height)
+Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
-    """the class square is a subclass from
-rectangle
-
-    Args:
-            Rectangle (_type_): _description_
+    """
+    *Instantiation with size: def __init__(self, size)::
+    *size must be private. No getter or setter
+    *size must be a positive integer, validated by integer_validator
+    *the area() method must be implemented
     """
 
     def __init__(self, size):
