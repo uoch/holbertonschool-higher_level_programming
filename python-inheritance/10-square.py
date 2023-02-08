@@ -5,7 +5,10 @@ his task is for implimenting squar
 from Rectangle
 """
 
-class Square (Rectangle):
+Rectangle = __import__('9-rectangle').Rectangle
+
+
+class Square(Rectangle):
     """the class square is a subclass from
 rectangle
 
