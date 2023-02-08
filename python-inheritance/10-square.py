@@ -1,12 +1,7 @@
 #!/usr/bin/python3
 """this task is for implimenting squar 
 from Rectangle"""
-Rectangle = __import__('9-rectangle').Rectangle
-"""_summary_
 
-	Returns:
-		_type_: _description_
-	"""
 
 
 class Square (Rectangle):
