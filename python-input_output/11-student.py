@@ -31,11 +31,12 @@ class Student:
                 if i == 'age':
                     d[i] = self.age
         return (d)
+
     def reload_from_json(self, json):
-        for i in json:
-            if i == 'first_name':
-                self.first_name = json[i]
-            if at == 'last_name':
-                self.last_name = json[i]
-            if at == 'age':
-                self.age = json[i]
+        for j in json:
+            if j == 'first_name':
+                self.first_name = json[j]
+            if j == 'last_name':
+                self.last_name = json[j]
+            if j == 'age':
+                self.age = json[j]
