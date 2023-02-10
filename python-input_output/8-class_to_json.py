@@ -14,4 +14,4 @@ def class_to_json(obj):
 		_type_: _description_
 	"""
 	obj_dict = obj.__dict__
-	aareturn (obj_dict)
+	return (obj_dict)
