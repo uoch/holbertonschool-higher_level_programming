@@ -16,5 +16,6 @@ if __name__ == "__main__":
         with open("add_item.json", "w") as file:
             for line in lines[1:]:
                 file.write(line)
-    items.extend(sys.argv[1:])
+    else:
+        items.extend(sys.argv[1:])
     save_to_json_file(items, "add_item.json")
