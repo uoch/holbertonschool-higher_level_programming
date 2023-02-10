@@ -4,14 +4,14 @@
 
 
 def class_to_json(obj):
-	"""class_to_json
+    """class_to_json
 
-	Args:
-		obj (_type_): ll attributes of the obj Class are serializable:
-    list, dictionary, string, integer and boolean
+    Args:
+            obj (_type_): ll attributes of the obj Class are serializable:
+list, dictionary, string, integer and boolean
 
-	Returns:
-		_type_: _description_
-	"""
-	obj_dict = obj.__dict__
-	return (obj_dict)
+    Returns:
+            _type_: _description_
+    """
+    obj_dict = obj.__dict__
+    return (obj_dict)
