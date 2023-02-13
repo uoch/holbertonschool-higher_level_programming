@@ -94,3 +94,11 @@ class Rectangle (Base):
         """display"""
         for i in range(self.__height):
             print("#"*self.__width)
+
+        def __str__(self):
+            """rapport"""
+            xx = self.__x
+            yy = self.__y,
+            w = self.__width,
+            h = self.__height
+            return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, xx, yy, w, h)
