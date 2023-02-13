@@ -97,8 +97,5 @@ class Rectangle (Base):
 
         def __str__(self):
             """rapport"""
-            xx = self.x
-            yy = self.y,
-            w = self.width,
-            h = self.height
-            return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, xx, yy, w, h)
+            return ("[Rectangle] ({}) {}/{} - {}/{}"
+                    .format(self.id, self.x, self.y, self.width, self.height))
