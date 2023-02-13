@@ -94,4 +94,3 @@ class Rectangle (Base):
         """display"""
         for i in range(self.__height):
             print("#"*self.__width)
-        print()
