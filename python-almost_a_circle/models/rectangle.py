@@ -42,7 +42,7 @@ class Rectangle (Base):
         if not isinstance(value, int):
             raise TypeError("{} must be an integer".format(string))
         if value < 0:
-            raise ValueError("{} must be > 0".format(string))
+            raise ValueError("{} must be >= 0".format(string))
 
     @property
     def height(self):
@@ -79,3 +79,9 @@ class Rectangle (Base):
     def y(self, value):
         self.greater_than_zero("y", value)
         self.__y = value
+
+    def area(self):
+        """
+        that returns the area value of the Rectangle instance.
+        """
+        return (self.__height*self.__width)
