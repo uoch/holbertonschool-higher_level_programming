@@ -19,6 +19,10 @@ class Rectangle (Base):
         self.__x = x
         self.__y = y
         super().__init__(id)
+        self.strictly_greater_than_zero("width", width)
+        self.strictly_greater_than_zero("height", height)
+        self.greater_than_zero("x", x)
+        self.greater_than_zero("y", y)
 
     def strictly_greater_than_zero(self, string, value):
         """strictly_greater_than_zero
