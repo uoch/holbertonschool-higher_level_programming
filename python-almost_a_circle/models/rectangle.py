@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""rectangle.py"""
+"""rectangle.py
+is a class inherteds from Base"""
 from base import Base
 
 
