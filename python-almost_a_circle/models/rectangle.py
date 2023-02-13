@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """rectangle.py
-is a class inherteds from Base"""
-from base import Base
+is a class inherteds 
+from Base"""
+from models.base import Base
 
 
 class Rectangle (Base):
