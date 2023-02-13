@@ -93,4 +93,4 @@ class Rectangle (Base):
     def display(self):
         """display"""
         for i in range(self.__height):
-            print(("#"*width)+'\n')
+            print(("#"*self.__width)+'\n')
