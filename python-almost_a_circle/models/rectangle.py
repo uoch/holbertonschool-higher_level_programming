@@ -2,6 +2,7 @@
 """rectangle.py
 is a class inherteds
 from Base"""
+
 from models import Base
 
 
