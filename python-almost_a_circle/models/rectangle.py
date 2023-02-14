@@ -130,9 +130,9 @@ class Rectangle (Base):
             if 'id' in kwargs:
                 super().__init__(kwargs['id'])
 
-        def to_dictionary(self):
-            return {'id': super().__init__(id),
-                    'width': self.__width,
-                    'height': self.__height,
-                    'x': self.__x,
-                    'y': self.__y}
+    def to_dictionary(self):
+        return {'id': super().__init__(id),
+                'width': self.__width,
+                'height': self.__height,
+                'x': self.__x,
+                'y': self.__y}
