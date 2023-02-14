@@ -37,7 +37,7 @@ class Square (Rectangle):
         if args:
             for i in range(len(args)):
                 if i == 0:
-                    super().__init__(args[0])
+                    super(Rectangle, self).__init__(args[0])
                 if i == 1:
                     self.size = args[1]
                 if i == 2:
@@ -52,4 +52,4 @@ class Square (Rectangle):
             if 'y' in kwargs:
                 self.__y = kwargs['y']
             if 'id' in kwargs:
-                super().__init__(kwargs['id'])
+                super(Rectangle, self).__init__(kwargs['id'])
