@@ -41,15 +41,15 @@ class Square (Rectangle):
                 if i == 1:
                     self.size = args[1]
                 if i == 2:
-                    self.__x = args[2]
+                    self.x = args[2]
                 if i == 3:
-                    self.__y = args[3]
+                    self.y = args[3]
         else:
             if 'size' in kwargs:
                 self.__width = kwargs['size']
             if 'x' in kwargs:
-                self.__x = kwargs['x']
+                self.x = kwargs['x']
             if 'y' in kwargs:
-                self.__y = kwargs['y']
+                self.y = kwargs['y']
             if 'id' in kwargs:
                 super(Rectangle, self).__init__(kwargs['id'])
