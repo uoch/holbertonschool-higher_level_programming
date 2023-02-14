@@ -101,3 +101,12 @@ class Rectangle (Base):
         """rapport"""
         return ("[Rectangle] ({}) {}/{} - {}/{}"
                 .format(self.id, self.x, self.y, self.width, self.height))
+
+    def update(self, *args):
+        """update
+        """
+        super().__init__(args[0])
+        self.__width = args[1]
+        self.__height = args[2]
+        self.__x = args[3]
+        self.__y = args[4]
