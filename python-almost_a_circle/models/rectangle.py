@@ -3,7 +3,7 @@
 is a class inherteds
 from Base"""
 
-from models import Base
+from models.base import Base
 
 
 class Rectangle (Base):
