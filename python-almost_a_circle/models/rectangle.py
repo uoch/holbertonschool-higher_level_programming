@@ -105,8 +105,14 @@ class Rectangle (Base):
     def update(self, *args):
         """update
         """
-        super().__init__(args[0])
-        self.__width = args[1]
-        self.__height = args[2]
-        self.__x = args[3]
-        self.__y = args[4]
+        for i in range(len(args)):
+            if i == 0:
+                super().__init__(args[0])
+            if i == 1:
+                self.__width = args[1]
+            if i == 2:
+                self.__height = args[2]
+            if i == 3:
+                self.__x = args[3]
+            if i == 4:
+                self.__y = args[4]
