@@ -136,7 +136,7 @@ class Rectangle (Base):
         Returns:
             dic: dictionnary presntation
         """
-        return {'id': super().__init__(id),
+        return {'id': self.id,
                 'width': self.__width,
                 'height': self.__height,
                 'x': self.__x,
