@@ -131,6 +131,11 @@ class Rectangle (Base):
                 super().__init__(kwargs['id'])
 
     def to_dictionary(self):
+        """to_dictionary
+
+        Returns:
+            dic: dictionnary presntation
+        """
         return {'id': super().__init__(id),
                 'width': self.__width,
                 'height': self.__height,
