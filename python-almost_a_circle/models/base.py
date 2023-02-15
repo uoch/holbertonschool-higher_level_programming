@@ -30,6 +30,8 @@ class Base:
         Args:
         list_objs (_type_): _description_
         """
+        if list_objs is None:
+            list_objs = []
         file = cls.__name__+".json"
         with open(file, 'w', encoding="utf-8") as f:
             list_dicts = [i.to_dictionary() for i in list_objs]
