@@ -16,6 +16,7 @@ class Base:
             self.id = Base.__nb_objects
 
     def to_json_string(list_dictionaries):
+        """rectangle.py"""
         if list_dictionaries == [] or list_dictionaries is None:
             return "[]"
         else:
