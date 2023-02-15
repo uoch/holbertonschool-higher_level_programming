@@ -45,6 +45,6 @@ class Base:
         Args:
             json_string (_type_): _description_
         """
-        if json_string == None:
+        if json_string is None:
             return []
         return json.loads(json_string)
