@@ -37,6 +37,7 @@ class Base:
             list_dicts = [i.to_dictionary() for i in list_objs]
             k = cls.to_json_string(list_dicts)
             f.write(k)
+
     @staticmethod
     def from_json_string(json_string):
         """from_json_string
