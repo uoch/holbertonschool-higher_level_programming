@@ -28,9 +28,10 @@ class Base:
         """save_to_file
 
         Args:
-            list_objs (_type_): _description_
+        list_objs (_type_): _description_
         """
         file = cls.__name__+".json"
-        with open(file, 'a', encoding="utf-8") as f:
-            k = cls.to_json_string(list_objs)
+        with open(file, 'w', encoding="utf-8") as f:
+            list_dicts = [i.to_dictionary() for i in list_objs]
+            k = cls.to_json_string(list_dicts)
             f.write(k)
