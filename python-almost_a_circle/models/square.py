@@ -55,6 +55,11 @@ class Square (Rectangle):
                 super(Rectangle, self).__init__(kwargs['id'])
 
     def to_dictionary(self):
+        """_summary_
+
+        Returns:
+            _type_: _description_
+        """
         return {'id': self.id,
                 'x': self.x,
                 'size': self.size,
