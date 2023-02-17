@@ -70,5 +70,5 @@ class Base:
             return []
         with open(file, 'r') as f:
             k = f.read()
-            data = from_json_string(k)
-        return (cls.create(**d)for d in data)
+            data = cls.from_json_string(k)
+        return [cls.create(**d) for d in data]
