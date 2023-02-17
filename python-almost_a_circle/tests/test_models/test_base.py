@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+"""test_rectangle.py"""
 import unittest
 from models.base import Base
 
