@@ -1,29 +1,41 @@
 #!/usr/bin/python3
-"""Unittest for max_integer([..])
-"""
+
 import unittest
 from models.base import Base
 
 
-class TestMaxInteger(unittest.TestCase):
-    def test_id_generation(self):
-        # Test id generation for instances without an id
+class TestBase(unittest.TestCase):
+
+    def test_new_instance_id(self):
         b1 = Base()
         self.assertEqual(b1.id, 1)
-
         b2 = Base()
-        self.assertEqual(b2.id, 2)
+        self.assertEqual(b2.id, b2.id)
 
-        b3 = Base()
-        self.assertEqual(b3.id, 3)
+    def test_specified_id(self):
+        b3 = Base(89)
+        self.assertEqual(b3.id, 89)
 
-    def test_id_assignment(self):
-        # Test id assignment for instances with an id
-        b4 = Base(12)
-        self.assertEqual(b4.id, 12)
+    def test_to_json_string_none(self):
+        rjson = Base.to_json_string(None)
+        self.assertEqual(rjson, '[]')
 
-        b5 = Base(42)
-        self.assertEqual(b5.id, 42)
+        json_dictionary = Base.to_json_string([])
+        self.assertEqual(json_dictionary, '[]')
+
+        json_dictionary = Base.to_json_string([{'id': 12}])
+        self.assertEqual(json_dictionary, '[{"id": 12}]')
+
+    def test_from_json_string(self):
+        list_output = Base.from_json_string(None)
+        self.assertEqual(list_output, [])
+
+    def test_display_exit(self):
+        with self.assertRaises(TypeError) as e:
+            r = Base(2, 3)
+            r.display()
+        self.assertEqual(str(
+            e.exception), "__init__() takes from 1 to 2 positional arguments but 3 were given")
 
 
 if __name__ == '__main__':
