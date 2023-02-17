@@ -3,8 +3,8 @@
 is a class inherteds
 from Base"""
 
-from models.base import Base
-from models.rectangle import Rectangle
+Base = __import__('base').Base
+Rectangle = __import__('rectangle').Rectangle
 
 
 class Square (Rectangle):
