@@ -6,10 +6,8 @@ import json
 
 def load_from_json_file(filename):
     """load_from_json_file
-
     Args:
             filename (_type_): json_file
-
     Returns:
             _type_: python objects
     """
