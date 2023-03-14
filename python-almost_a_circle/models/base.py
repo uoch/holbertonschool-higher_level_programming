@@ -2,7 +2,7 @@
 """base.py"""
 import json
 import os
-
+import turtle
 
 class Base:
     """Base : Track to duplicting the same code
@@ -63,12 +63,25 @@ class Base:
         return dummy
 
     @classmethod
-    def load_from_file(cls):
-        """load_from_file"""
-        file = cls.__name__ + ".json"
-        if not os.path.isfile(file):
-            return []
-        with open(file, 'r') as f:
-            k = f.read()
-            data = cls.from_json_string(k)
-        return [cls.create(**d) for d in data]
+    def draw(cls, list_rectangles, list_squares):
+        """Draw using turtle."""
+        s = turtle.getscreen()
+        t = turtle.Turtle()
+
+        for rect in list_rectangles:
+            t.penup()
+            t.goto(rect.x, rect.y)
+            t.pendown()
+            for i in range(0, 2):
+                t.forward(rect.height)
+                t.left(90)
+                t.forward(rect.width)
+                t.left(90)
+
+        for sqr in list_squares:
+            t.penup()
+            t.goto(rect.x, rect.y)
+            t.pendown()
+            for i in range(0, 4):
+                t.forward(sqr.size)
+                t.left(90)
