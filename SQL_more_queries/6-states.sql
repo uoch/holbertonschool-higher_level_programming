@@ -1,0 +1,3 @@
+CREATE DATABASE IF NOT EXISTS hbtn_0d_usa ;
+use hbtn_0d_usa
+CREATE TABLE IF NOT EXISTS states IN hbtn_0d_usa (id INT NOT NULL AUTO_INCREMENT ,  name VARCHAR(256),UNIQUE (id), PRIMARY KEY (id));
