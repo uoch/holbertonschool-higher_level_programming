@@ -1,2 +1,2 @@
 -- The UNIQUE constraint marks the "id" column as unique, meaning that no two rows in the table can have the same value for "id".
-CREATE TABLE IF NOT EXISTS id_not_null (id INT DEFAULT 1 UNIQUE,  name VARCHAR(256) NOT NULL);
+CREATE TABLE IF NOT EXISTS id_not_null (id INT DEFAULT 1 UNIQUE,  name VARCHAR(256),UNIQUE (id));
