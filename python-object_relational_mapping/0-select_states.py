@@ -11,7 +11,7 @@ if __name__ == '__main__':
 
     # Connect to MySQL server running on localhost at port 3306
     db = MySQLdb.connect(host="localhost", port=3306, user=mysql_username,
-                        passwd=mysql_password, db=db_name)
+                         passwd=mysql_password, db=db_name)
 
     # Create cursor object to execute SQL queries
     cursor = db.cursor()
