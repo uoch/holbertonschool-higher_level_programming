@@ -25,7 +25,6 @@ if __name__ == "__main__":
     cur.execute("SELECT * FROM states ORDER BY states.id ASC")
 
     result = cur.fetchall()
-    b = 0
     for row in result:
         if (name == row[1]):
             print(row[0])

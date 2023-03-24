@@ -1,4 +1,5 @@
-#!/usr/bin/python3
+    """_summary_
+    """#!/usr/bin/python3
 """
 Next, write a script 14-model_city_fetch_by_state.py that
 prints all City objects from the database hbtn_0e_14_usa:
