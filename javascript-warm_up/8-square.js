@@ -6,6 +6,7 @@ const ss = '\n';
 const numTimes = parseInt(args[2]);
 if (isNaN(numTimes)) {
   console.log('Missing size');
+  process.exit();
 }
 if (numTimes === undefined) {
   console.log('Missing size');
