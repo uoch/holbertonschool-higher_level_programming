@@ -1,9 +1,12 @@
 #!/usr/bin/node
 const args = process.argv;
 const line = 'X';
-let row = ''
-const ss = '\n'
+let row = '';
+const ss = '\n';
 const numTimes = parseInt(args[2]);
+if (isNaN(numTimes)) {
+  console.log('Missing size');
+}
 if (numTimes === undefined) {
   console.log('Missing size');
 }
@@ -14,6 +17,6 @@ for (let i = 0; i < numTimes; i++) {
   if (i === (numTimes - 1)) {
     break;
   }
-  row += ss
+  row += ss;
 }
 console.log(row);
