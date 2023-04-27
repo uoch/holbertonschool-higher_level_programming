@@ -9,8 +9,9 @@ if (a.length === 2) {
 } else if (a.length === 3) {
   if (a[2] < 0) {
     console.log(z);
+  } else {
+    console.log(a[2]);
   }
-  console.log(a[2]);
 } else {
   console.log(a[3]);
 }
