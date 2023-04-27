@@ -24,7 +24,11 @@ request(url, (error, response, body) => {
         console.error(error);
       } else {
         const actor = JSON.parse(body);
-        console.log(actor.films.length);
+        if (h === 0) {
+          console.log(h);
+        } else {
+          console.log(actor.films.length);
+        }
       }
     });
   }
