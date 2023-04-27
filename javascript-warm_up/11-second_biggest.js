@@ -7,7 +7,7 @@ a.sort(function (a, b) {
 if (a.length === 2) {
   console.log(z);
 } else if (a.length === 3) {
-  if (a[2] < 0) {
+  if (parseInt(a[2])) {
     console.log(z);
   } else {
     console.log(a[2]);
