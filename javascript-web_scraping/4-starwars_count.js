@@ -1,4 +1,12 @@
 #!/usr/bin/node
+function serch (a) {
+  const nn = 'https://swapi-api.hbtn.io/api/people/18/';
+  for (let i = 0; i < a.length; i++) {
+    if (a[i] === nn) {
+      return (i);
+    }
+  }
+}
 
 const request = require('request');
 const n = process.argv[2];
@@ -10,7 +18,8 @@ request(url, (error, response, body) => {
     console.error(error);
   } else {
     const movie = JSON.parse(body);
-    request(movie.results[0].characters[15], (error, response, body) => {
+    const h = serch(movie.results[0].characters);
+    request(movie.results[0].characters[h], (error, response, body) => {
       if (error) {
         console.error(error);
       } else {
