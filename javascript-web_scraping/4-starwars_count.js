@@ -10,7 +10,10 @@ function serch (a) {
 
 const request = require('request');
 const n = process.argv[2];
-
+if (!n) {
+  console.error('Usage: node 4-starwars_count.js <url>');
+  process.exit(1);
+}
 const url = n;
 
 request(url, (error, response, body) => {
