@@ -1,0 +1,10 @@
+## What a URL is
+A URL (Uniform Resource Locator) is a specific web address that is used to locate a resource on the internet. It is a string of characters that serves as the unique identifier for a resource, such as a webpage, an image, a document, or any other file that can be accessed via the internet.
+### A typical URL consists of several components:
+- Protocol: This specifies the communication protocol to be used when accessing the resource. The most common protocol is "http://" or "https://" for web pages, but there are also others like "ftp://" for file transfers or "mailto://" for email addresses.
+- Domain Name: This is the unique name that identifies a website on the internet. For example, "example.com" or "google.com". The domain name is typically followed by a top-level domain (TLD) such as ".com", ".org", ".net", or country-specific TLDs like ".uk" or ".fr".
+- Path: The path refers to the specific location of a resource on a server. It is a hierarchical structure that represents directories and subdirectories on the server. For example, "/products/electronics/" could be a path to a webpage about electronics products.
+- Query Parameters: Query parameters are optional components that can be added to a URL to provide additional information or instructions to the server. They are appended to the end of the URL and usually start with a "?" followed by key-value pairs separated by "&". For example, "?category=books&sort=price" could be query parameters specifying the category and sorting criteria for a product search.
++ Here is an example of a URL: "https://www.example.com/products/electronics/?category=phones&sort=price". In this example, the URL specifies the use of the HTTPS protocol, the domain name is "www.example.com", the path is "/products/electronics/", and the query parameters are "category=phones&sort=price".
++ When you enter a URL into a web browser, it sends a request to the server specified in the URL, asking for the corresponding resource. The server then responds with the requested resource, which can be displayed in the browser or processed by other applications.
+## What HTTP is
