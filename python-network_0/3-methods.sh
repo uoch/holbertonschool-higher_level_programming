@@ -1,3 +1,3 @@
 #!/bin/bash
 #displays the body of the response
-curl  -s  -X "OPTIONS" "$1"
+curl -s -I -X OPTIONS "$1" | grep Allow:| cut -d' '  -f 2,3,4,5,6
