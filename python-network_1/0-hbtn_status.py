@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import urllib.request
 """0. What's my status? #0
 """
