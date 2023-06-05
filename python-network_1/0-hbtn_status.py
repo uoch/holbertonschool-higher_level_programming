@@ -10,4 +10,4 @@ with urllib.request.urlopen(url) as response:
 print("- Body response:")
 print("\t- type: {}".format(type(body)))
 print("\t- content: b'{}'".format(body))
-print("\t- utf8 content", body)
+print("\t- utf8 content:", body)
