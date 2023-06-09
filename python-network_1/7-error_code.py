@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """Handle error codes."""
 from sys import argv
 import requests

@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """Status of api."""
 from sys import argv
 import requests
