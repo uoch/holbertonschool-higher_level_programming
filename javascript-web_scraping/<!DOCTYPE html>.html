@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up</title>
+</head>
+<body>
+  <h1>Sign Up</h1>
+
+  <label for="email">Email:</label>
+  <input type="text" id="email">
+
+  <label for="password">Password:</label>
+  <input type="password" id="password">
+
+  <label for="rePassword">Retype Password:</label>
+  <input type="password" id="rePassword">
+
+  <label for="role">Role:</label>
+  <select id="role">
+    <option value="manager">Manager</option>
+    <option value="receiver">Receiver</option>
+    <option value="retriever">Retriever</option>
+  </select>
+
+  <button onclick="handleSignUp()">Sign Up</button>
+
+  <script>
+    function handleSignUp() {
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const rePassword = document.getElementById('rePassword').value;
+      const role = document.getElementById('role').value;
+
+      let formData = new FormData();
+      formData.append('username', email.toLowerCase());
+      formData.append('password', password);
+      formData.append('re_password', rePassword);
+      formData.append('role', role);
+
+      fetch('http://127.0.0.1:8000/auth/users/', {
+        method: 'POST',
+        body: formData,
+      })
+        .then(response => {
+          if (response.ok) {
+            return response.json();
+          } else {
+            throw new Error('Error: ' + response.status);
+          }
+        })
+        .then(data => {
+          console.log(data);
+          alert('Sign Up Successful');
+
+          fetch('http://127.0.0.1:8000/api/store/')
+            .then(response => {
+              if (response.ok) {
+                return response.json();
+              } else {
+                throw new Error('Error: ' + response.status);
+              }
+            })
+            .then(storeData => {
+              const storeNames = storeData.map(store => store.name);
+              console.log(storeNames);
+            })
+            .catch(error => {
+              console.error(error);
+            });
+        })
+        .catch(error => {
+          console.error(error);
+          alert('An error occurred during sign up.');
+        });
+    }
+  </script>
+</body>
+</html>
